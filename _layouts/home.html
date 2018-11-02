@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+    </head>
+<link href="{{ '/assets/style/home.css' | relative_url }}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<body>
+    <header>
+        <nav>
+            <ul>
+              {% for item in site.data.page_groups.home %}
+              <li><a href="{{ item.link | relative_url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    {{ content }}
+    <footer>
+        2018 © James Treloar
+    </footer>
+</body>
+</html>

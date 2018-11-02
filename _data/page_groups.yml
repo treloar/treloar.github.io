@@ -1,0 +1,10 @@
+
+home:
+- title: About
+  link: /
+- title: Reading List
+  link: reading
+- title: Captures
+  link: captures
+- title: Writings
+  link: writings

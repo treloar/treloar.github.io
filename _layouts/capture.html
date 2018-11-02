@@ -1,0 +1,16 @@
+---
+layout: home
+---
+{{ content }}
+<ul>
+    {% for photo in page.photos %}
+    <li>
+        <div class="capture-bg">
+            <img
+                class="capture-img"
+                src="{{ photo.asset_path | relative_url }}"
+                alt="{{ photo.title }}"></img>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
